@@ -1,0 +1,13 @@
+{
+  "config": "hugo.toml,pages.json",
+  "theme": "template",
+  "sample": "exampleSite",
+  "version": "0.167.0",
+  "slug": "vintage-web-hugo-theme",
+  "npm": [],
+  "asset_build": [],
+  "generator": "3.1",
+  "repo": "https://github.com/hcw889/Portfolio-hcw889.git",
+  "baseURL": "https://hcw889.github.io/Portfolio-hcw889/",
+  "audited": true
+}
