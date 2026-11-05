@@ -1,5 +1,6 @@
 baseURL = "https://example.com"
-locale = "en-US"
+defaultContentLanguage = "ko"
+locale = "ko-KR"
 title = "Retro Web Central - Y2K Compliant Since 1999"
 
 
