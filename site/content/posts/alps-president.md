@@ -34,16 +34,16 @@ toc: true
 
 - **정기 스터디:** 매 학기 매주 부원 스터디를 진행했습니다.
 - **교내 대회 개최:** 2026년 5월 9일, ALPS 주관으로 교내 프로그래밍 경진대회 [JBNUPC](https://sites.google.com/view/jbnu-alps/jbnupc)를 열었습니다.
-- **대회 성과:** 동아리 부원들이 2026 ICPC Seoul Regional에 진출했습니다(부원들의 성과입니다).
+- **대회 성과:** 동아리 부원들과 2026 ICPC 예선전을 치뤘고, ICPC Seoul Regional 우수팀 진출까지 이뤘습니다.(부원들과의 성과입니다).
 
 이 결과들은 동아리가 목표로 한 학술적 역량 강화가 실제 활동으로 이어졌음을 보여 줍니다.
 
-{{< screenshot src="/images/alps-jbnupc.png" alt="JBNUPC 교내 프로그래밍 경진대회 사진" caption="JBNUPC 교내 프로그래밍 경진대회 (2026.05.09)" >}}
+{{< screenshot src="/images/alps-jbnupc.png" alt="2026 JBNUPC 전북대학교 프로그래밍 경진대회 포스터. 2026년 5월 9일 14시~17시, 공과대학 7호관" caption="2026 JBNUPC 포스터 (주관 ALPS, 전북대학교 SW중심대학사업단)" >}}
 
-{{< screenshot src="/images/alps-study.png" alt="ALPS 주간 스터디 사진" caption="매주 진행한 ALPS 부원 스터디" >}}
+{{< screenshot src="/images/alps-study.jpg" alt="ALPS 부원들이 노트북을 펴고 둘러앉아 함께 문제를 푸는 스터디 모습" caption="매주 진행한 ALPS 부원 스터디" >}}
 
 ## 배운 점과 다음 개선
 
-- **배운 점:** 동아리를 운영하면서 마무리를 잘 해야 한다는 것을 배웠습니다.
+- **배운 점:** 동아리를 운영하면서 언제나 마무리를 잘 해야 한다는 것을 배웠습니다.
 - **한계:** 변수가 많은 단체 운영을 저 혼자 맡기는 어렵다는 한계에 부딪혔습니다.
 - **다음 개선:** 운영을 함께할 운영진을 3~4명 정도 모아 역할을 나누려고 합니다. 역할을 나누면 한 사람에게 몰리는 운영 부담을 줄일 수 있다고 생각합니다.
