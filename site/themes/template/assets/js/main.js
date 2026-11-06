@@ -217,12 +217,6 @@ function initKeyboardNavigation() {
             e.preventDefault();
             window.location.href = '/posts/';
         }
-        
-        // F11 for fullscreen (show message)
-        if (e.key === 'F11') {
-            e.preventDefault();
-            alert('F11 detected! If this were a real 90s browser, you\'d now be in fullscreen mode! 📺');
-        }
     });
 }
 
