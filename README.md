@@ -78,3 +78,20 @@ hugo server --config hugo.toml,pages.json --baseURL http://localhost:1313/
 3. 저장소의 [Actions 탭](https://github.com/hcw889/Portfolio-hcw889/actions)에서 "Deploy Hugo to GitHub Pages" 실행이 초록 체크(성공)가 될 때까지 기다립니다. 보통 1–2분 걸립니다.
 4. 공개 사이트 https://hcw889.github.io/Portfolio-hcw889/ 를 Ctrl+F5(캐시 무시)나 시크릿 창으로 열어 바뀐 내용을 확인합니다.
 5. 실행이 실패하면 Actions에서 실패한 단계의 로그를 열어 원인을 확인하고, 고친 뒤 다시 push합니다.
+
+## 출처와 제작 구분
+
+| 구분 | 내용 | 위치 |
+|---|---|---|
+| 외부 자료: 테마 | Vintage Web Hugo Theme (제작 madebydia, MIT 라이선스) | `site/themes/template/`, 루트의 테마 원본 파일 |
+| 외부 자료: 수업 제공 | 배포 준비 스크립트 `prepare_github_pages.py`(3.1)와, 이 스크립트가 만든 워크플로·빌드 도우미 | `prepare_github_pages.py`, `.github/` |
+| 직접 작성 | 소개·활동 글에 담긴 본인의 경력·활동 내용, 사이트 제목·소셜 링크·표시 옵션 설정 | `site/content/`, `site/hugo.toml` |
+| AI 도움 | Claude Code(Anthropic, 모델 Claude Opus 5.5)로 저장소 구조 분석, 테마 템플릿·JS 수정, screenshot 숏코드 작성, 본인이 준 내용의 문장 정리, README 초안 작성, 공개 사이트 점검을 했습니다. 모든 변경은 본인이 확인한 뒤 직접 커밋했습니다. | 커밋 이력 |
+
+### 테마에서 수정한 부분
+
+- `assets/js/main.js`: Esc 키로 모든 창 내용을 숨기던 동작 제거, 다른 페이지에서 이전 스크롤 위치로 열리던 동작 제거, F11 알림 창 제거, 창 접기 상태를 페이지별로 저장
+- `layouts/partials/sidebar.html`: 홈으로 연결되던 월별 Archives 링크 제거
+- `layouts/_default/list.html`: 목록 썸네일의 alt를 각 글 제목으로, 목록 요약을 글 설명(description)으로
+- `layouts/index.html`, `layouts/categories/term.html`, `layouts/tags/term.html`: 목록 요약을 글 설명(description)으로
+- `layouts/_default/baseof.html`: `lang` 기본값을 `ko`로 변경 (실제 언어는 `site/hugo.toml`의 `defaultContentLanguage`로 지정)
