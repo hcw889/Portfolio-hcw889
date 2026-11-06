@@ -29,3 +29,37 @@
 | `.github/pages_build.py` | Hugo 빌드와 배포 경로 보정을 하는 도우미 |
 
 루트의 `layouts/`, `assets/`, `images/`, `exampleSite/`는 테마 원본 사본이며 배포에는 쓰이지 않습니다.
+
+## 도구 버전
+
+| 도구 | 버전 | 쓰는 곳 |
+|---|---|---|
+| Hugo Extended | 0.167.0 | GitHub Actions 빌드 (`.github/workflows/hugo-pages.yml`에서 지정) |
+| Python | 3.12 (Actions) / 3.13.2 (로컬) | `.github/pages_build.py`, `prepare_github_pages.py` |
+| Dart Sass | 1.105.0 | 워크플로가 함께 설치 (이 테마는 Sass를 쓰지 않음) |
+| Node.js | 24 | 워크플로가 함께 설치 (이 테마는 npm 패키지가 없음) |
+| Go | 1.27.1 | 워크플로가 함께 설치 |
+
+## 빌드와 실행
+
+### GitHub Actions (자동 배포)
+
+main 브랜치에 push하면 `.github/workflows/hugo-pages.yml`이 Hugo를 설치한 뒤 아래 두 명령을 차례로 실행하고, 결과물 `public/`을 GitHub Pages에 배포합니다.
+
+```bash
+python .github/pages_build.py --dependencies
+python .github/pages_build.py --build
+```
+
+`--build`는 `site/` 폴더에서 Hugo를 실행해 `public/`을 만들고, 사이트 안의 주소 앞에 `/Portfolio-hcw889/`를 붙이는 경로 보정을 합니다.
+
+### 로컬 미리보기 (선택)
+
+[Hugo 0.167.0 릴리스](https://github.com/gohugoio/hugo/releases/tag/v0.167.0)에서 Extended 버전(Windows는 `hugo_extended_0.167.0_windows-amd64.zip`)을 받아 `hugo.exe`가 있는 폴더를 PATH에 추가한 뒤 실행합니다.
+
+```bash
+cd site
+hugo server --config hugo.toml,pages.json --baseURL http://localhost:1313/
+```
+
+브라우저에서 http://localhost:1313/ 을 엽니다. 로컬 미리보기는 배포 때의 경로 보정을 하지 않으므로, 최종 확인은 공개 사이트에서 합니다.
