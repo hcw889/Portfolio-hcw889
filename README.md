@@ -21,9 +21,12 @@
 | `site/hugo.toml` | 사이트 제목, 언어, 메뉴, 소셜 링크, 표시 옵션 |
 | `site/content/_index.md` | 홈 화면 본문 |
 | `site/content/about.md` | 소개 페이지 (`/about/`) |
-| `site/content/posts/` | 활동 글 (`/posts/글이름/`) |
+| `site/content/posts/` | 활동·수상 글 (`/posts/글이름/`). 분류는 대표 활동, 운영, 프로젝트, 수상 |
+| `site/content/categories/_index.md`, `site/content/tags/_index.md` | 분류·태그 목록 페이지의 제목 |
 | `site/static/images/` | 이미지. 글에서는 `/images/파일명`으로 씁니다 |
+| `site/static/favicon.ico` | 브라우저 탭 아이콘 |
 | `site/layouts/shortcodes/screenshot.html` | 이미지 파일이 있을 때만 그림을 보여 주는 숏코드 |
+| `site/layouts/404.html` | 잘못된 주소로 들어왔을 때 보이는 안내 페이지 |
 | `site/themes/template/` | 테마의 HTML 템플릿, CSS, JavaScript |
 | `.github/workflows/hugo-pages.yml` | main에 push하면 실행되는 배포 워크플로 |
 | `.github/pages_build.py` | Hugo 빌드와 배포 경로 보정을 하는 도우미 |
@@ -85,13 +88,18 @@ hugo server --config hugo.toml,pages.json --baseURL http://localhost:1313/
 |---|---|---|
 | 외부 자료: 테마 | Vintage Web Hugo Theme (제작 madebydia, MIT 라이선스) | `site/themes/template/`, 루트의 테마 원본 파일 |
 | 외부 자료: 수업 제공 | 배포 준비 스크립트 `prepare_github_pages.py`(3.1)와, 이 스크립트가 만든 워크플로·빌드 도우미 | `prepare_github_pages.py`, `.github/` |
-| 직접 작성 | 소개·활동 글에 담긴 본인의 경력·활동 내용, 사이트 제목·소셜 링크·표시 옵션 설정 | `site/content/`, `site/hugo.toml` |
-| AI 도움 | Claude Code(Anthropic, 모델 Claude Opus 5.5)로 저장소 구조 분석, 테마 템플릿·JS 수정, screenshot 숏코드 작성, 본인이 준 내용의 문장 정리, README 초안 작성, 공개 사이트 점검을 했습니다. 모든 변경은 본인이 확인한 뒤 직접 커밋했습니다. | 커밋 이력 |
+| 외부 자료: 포스터 | 2026 하반기 SW역량인증제 시행 안내 포스터 (전북대학교 SW중심대학사업단), 2026 JBNUPC 포스터 (주관 ALPS, 전북대학교 SW중심대학사업단) | `site/static/images/ta-poster.png`, `site/static/images/alps-jbnupc.png` |
+| 직접 작성 | 소개·활동·수상 글에 담긴 본인의 경력과 활동 내용, 사이트 제목·소셜 링크·표시 옵션 설정 | `site/content/`, `site/hugo.toml` |
+| 직접 촬영·캡처 | 프로필 사진, ALPS 스터디 사진 (촬영 위치 정보 제거), 본인이 참여한 서비스 Litmus·Zerotime의 화면 캡처 | `site/static/images/profile.jpg`, `alps-study.jpg`, `Litmus.png`, `Zerotime.png` |
+| AI 도움 | Claude Code(Anthropic, 모델 Claude Opus 5.5)로 저장소 구조 분석, 테마 템플릿·CSS·JS 수정, screenshot 숏코드와 404 페이지 작성, 파비콘 생성 (Python Pillow), 사진의 위치 정보 제거와 크기 조정, 본인이 준 내용의 문장 정리, README 초안 작성, 공개 사이트 점검을 했습니다. 모든 변경은 본인이 확인한 뒤 직접 커밋했습니다. | 커밋 이력 |
 
 ### 테마에서 수정한 부분
 
-- `assets/js/main.js`: Esc 키로 모든 창 내용을 숨기던 동작 제거, 다른 페이지에서 이전 스크롤 위치로 열리던 동작 제거, F11 알림 창 제거, 창 접기 상태를 페이지별로 저장
+- `assets/js/main.js`: Esc 키로 모든 창 내용을 숨기던 동작 제거, 다른 페이지에서 이전 스크롤 위치로 열리던 동작 제거, F11 알림 창 제거, 창 버튼(_ □ ×)의 접기·크게·닫기 동작과 상태 저장 제거 (창 버튼은 장식으로만 사용)
+- `assets/css/main.css`: 480px 이하 화면에서 본문 글자를 13px로 키우고 메뉴 칸 높이를 늘림, 장식용 창 버튼의 손가락 커서와 눌림 효과 제거
+- `layouts/partials/navigation.html`: 메뉴의 Categories, Tags를 분류, 태그로 표기
 - `layouts/partials/sidebar.html`: 홈으로 연결되던 월별 Archives 링크 제거
-- `layouts/_default/list.html`: 목록 썸네일의 alt를 각 글 제목으로, 목록 요약을 글 설명(description)으로
-- `layouts/index.html`, `layouts/categories/term.html`, `layouts/tags/term.html`: 목록 요약을 글 설명(description)으로
+- `layouts/_default/list.html`: 목록 제목을 h1으로 추가, weight 순서로 정렬해 대표 활동을 맨 위에 표시, 분류·태그 항목에서는 읽는 시간과 단어 수를 숨김, 썸네일 alt를 각 글 제목으로, 목록 요약을 글 설명(description)으로
+- `layouts/categories/term.html`, `layouts/tags/term.html`: 제목을 h1으로, 분류·태그 이름과 글 수를 한글로 표기, 목록 요약을 글 설명(description)으로
+- `layouts/index.html`: 홈 Recent Posts의 요약을 글 설명(description)으로
 - `layouts/_default/baseof.html`: `lang` 기본값을 `ko`로 변경 (실제 언어는 `site/hugo.toml`의 `defaultContentLanguage`로 지정)
