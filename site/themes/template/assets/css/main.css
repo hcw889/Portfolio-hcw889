@@ -594,7 +594,12 @@ a:visited {
 
 @media (max-width: 480px) {
     body {
-        font-size: 10px;
+        font-size: 13px;
+    }
+
+    .nav-link {
+        padding: 10px 12px;
+        font-size: 13px;
     }
     
     .site-title {
