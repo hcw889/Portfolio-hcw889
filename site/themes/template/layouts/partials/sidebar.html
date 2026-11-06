@@ -44,22 +44,6 @@
 </div>
 {{ end }}
 
-<!-- Archives -->
-{{ if .Site.RegularPages }}
-<div class="sidebar-section">
-    <div class="sidebar-title">📅 Archives</div>
-    <ul>
-        {{ range .Site.RegularPages.GroupByDate "2006-01" }}
-        <li>
-            <a href="{{ "/posts/" | relLangURL }}{{ .Key }}/">
-                {{ .Key }} ({{ len .Pages }})
-            </a>
-        </li>
-        {{ end }}
-    </ul>
-</div>
-{{ end }}
-
 <!-- Series -->
 {{ with .Site.Taxonomies.series }}
 <div class="sidebar-section">
