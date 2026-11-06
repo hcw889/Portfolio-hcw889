@@ -54,8 +54,8 @@
                     </span>
                     {{ end }}
                 </div>
-                {{ with .Summary }}
-                <div class="post-list-summary">{{ . | truncate 150 }}</div>
+                {{ with .Description | default (.Summary | plainify | truncate 150) }}
+                <div class="post-list-summary">{{ . }}</div>
                 {{ end }}
             </li>
             {{ end }}
