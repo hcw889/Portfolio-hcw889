@@ -26,12 +26,13 @@ description: "이력과는 상관없는, 좋아하는 것들을 적어 둔 페�
 
 ### 사진 / 카메라
 - SONY A7M2 카메라를 가지고 있어요.
-{{< screenshot src="/images/1.jpg" alt="2025 JPG 전북대 풍경 콘테스트 1위 수상작" caption="2025 JPG" >}}
+- 2025년 11월 전북대 풍경콘테스트 우승도 했답니다. 
+{{< screenshot src="/images/1.jpg" alt="2025 JPG " caption="2025 JPG 전북대 풍경 콘테스트 1위 수상작" >}}
 {{< screenshot src="/images/2.jpg" width="50%" >}}
-{{< screenshot src="/images/3.jpg"  width="50%" >}}
-{{< screenshot src="/images/4.jpg"  width="50%" >}}
-{{< screenshot src="/images/5.jpg"  width="50%" >}}
-{{< screenshot src="/images/6.jpg"  width="50%" >}}
+{{< screenshot src="/images/3.jpg" width="50%" >}}
+{{< screenshot src="/images/4.jpg" width="50%" >}}
+{{< screenshot src="/images/5.jpg" width="50%" >}}
+{{< screenshot src="/images/6.jpg" width="50%" >}}
 
 ### JPOP / 콘서트
 - 🎵back number - 水平線🎵
