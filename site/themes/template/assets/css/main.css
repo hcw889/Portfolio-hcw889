@@ -140,12 +140,8 @@ a:visited {
     font-size: 8px;
     text-align: center;
     line-height: 12px;
-    cursor: pointer;
+    cursor: default;
     font-weight: bold;
-}
-
-.window-button:active {
-    border: 1px inset var(--button-face);
 }
 
 .window-content {
