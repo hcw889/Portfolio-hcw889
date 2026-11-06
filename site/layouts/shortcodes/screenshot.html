@@ -1,0 +1,11 @@
+{{- /* 이미지 파일이 site/static/ 안에 있을 때만 그림을 출력합니다. 파일이 아직 없으면 아무것도 출력하지 않아 깨진 이미지가 생기지 않습니다. */ -}}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- if and $src (fileExists (path.Join "static" $src)) -}}
+<figure>
+  <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy"{{ with .Get "width" }} style="max-width: {{ . }};"{{ end }}>
+  {{- with .Get "caption" }}
+  <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>
+{{- end -}}
