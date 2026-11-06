@@ -2,6 +2,7 @@
 title: "알고리즘 학술동아리 ALPS 회장"
 date: 2026-11-06
 draft: false
+weight: 1
 description: "전북대학교 알고리즘 학술동아리 ALPS의 회장으로 동아리 운영 전반을 맡고 있습니다."
 author: "홍채운"
 categories: ["대표 활동"]
