@@ -119,7 +119,6 @@ We're proud recipients of:
 ## Join Our Community! 🤝
 
 **Ways to Connect:**
-- 📝 [Sign our guestbook](/guestbook/) - share your thoughts!
 - 📧 Subscribe to our weekly newsletter
 - 💬 Join our IRC channel: #retrowebcentral on EFNet
 - 🔗 Exchange links with us

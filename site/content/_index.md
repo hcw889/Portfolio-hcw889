@@ -14,7 +14,6 @@ Greetings, fellow netizen! You've stumbled upon the most tubular corner of the i
 
 ### 🔥 Latest Updates 🔥
 
-- **NEW!** Our guestbook is now live! [Sign it here!](/guestbook/)
 - **COOL!** Check out our [HTML tutorials](/posts/html-basics-1999/) 
 - **RAD!** [Geocities vs. Angelfire showdown](/posts/geocities-vs-angelfire/)
 - **AWESOME!** [Best animated GIFs of the decade](/posts/best-animated-gifs/)
