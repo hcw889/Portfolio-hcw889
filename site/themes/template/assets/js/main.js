@@ -345,7 +345,8 @@ function initSearch() {
 function initThemePersistence() {
     // Remember window states
     document.querySelectorAll('.window').forEach((window, index) => {
-        const savedState = localStorage.getItem(`window-${index}-minimized`);
+        const stateKey = `window-${location.pathname}-${index}-minimized`;
+        const savedState = localStorage.getItem(stateKey);
         if (savedState === 'true') {
             const content = window.querySelector('.window-content');
             if (content) {
@@ -360,7 +361,7 @@ function initThemePersistence() {
                 setTimeout(() => {
                     const content = window.querySelector('.window-content');
                     const isMinimized = content.style.display === 'none';
-                    localStorage.setItem(`window-${index}-minimized`, isMinimized);
+                    localStorage.setItem(stateKey, isMinimized);
                 }, 200);
             });
         }
