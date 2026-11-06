@@ -2,9 +2,6 @@
 // Retro functionality with modern enhancements
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Window controls functionality
-    initWindowControls();
-    
     // Retro effects
     initRetroEffects();
     
@@ -19,80 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Search functionality
     initSearch();
-    
-    // Theme persistence
-    initThemePersistence();
 });
-
-// Window controls (minimize, maximize, close)
-function initWindowControls() {
-    document.querySelectorAll('.window-button').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            const buttonText = this.textContent;
-            const window = this.closest('.window');
-            
-            // Visual feedback
-            this.style.border = '1px inset var(--button-face)';
-            setTimeout(() => {
-                this.style.border = '1px outset var(--button-face)';
-            }, 100);
-            
-            switch(buttonText) {
-                case '_': // Minimize
-                    toggleWindowMinimize(window);
-                    break;
-                case '□': // Maximize
-                    toggleWindowMaximize(window);
-                    break;
-                case '×': // Close
-                    showCloseDialog(window);
-                    break;
-            }
-        });
-    });
-}
-
-function toggleWindowMinimize(window) {
-    const content = window.querySelector('.window-content');
-    if (content.style.display === 'none') {
-        content.style.display = 'block';
-        window.style.height = 'auto';
-    } else {
-        content.style.display = 'none';
-        window.style.height = 'auto';
-    }
-}
-
-function toggleWindowMaximize(window) {
-    if (window.classList.contains('maximized')) {
-        window.classList.remove('maximized');
-        window.style.position = 'static';
-        window.style.top = 'auto';
-        window.style.left = 'auto';
-        window.style.width = 'auto';
-        window.style.height = 'auto';
-        window.style.zIndex = 'auto';
-    } else {
-        window.classList.add('maximized');
-        window.style.position = 'fixed';
-        window.style.top = '10px';
-        window.style.left = '10px';
-        window.style.width = 'calc(100vw - 20px)';
-        window.style.height = 'calc(100vh - 40px)';
-        window.style.zIndex = '1000';
-    }
-}
-
-function showCloseDialog(window) {
-    const confirmed = confirm('Close this window?\n\nThis is just for show - the window will reappear when you refresh the page! 😉');
-    if (confirmed) {
-        window.style.animation = 'fadeOut 0.3s ease-out';
-        setTimeout(() => {
-            window.style.display = 'none';
-        }, 300);
-    }
-}
 
 // Retro effects
 function initRetroEffects() {
@@ -339,33 +263,6 @@ function initSearch() {
             });
         });
     }
-}
-
-// Theme persistence
-function initThemePersistence() {
-    // Remember window states
-    document.querySelectorAll('.window').forEach((window, index) => {
-        const stateKey = `window-${location.pathname}-${index}-minimized`;
-        const savedState = localStorage.getItem(stateKey);
-        if (savedState === 'true') {
-            const content = window.querySelector('.window-content');
-            if (content) {
-                content.style.display = 'none';
-            }
-        }
-        
-        // Save state when minimized
-        const minimizeBtn = window.querySelector('.window-button');
-        if (minimizeBtn && minimizeBtn.textContent === '_') {
-            minimizeBtn.addEventListener('click', function() {
-                setTimeout(() => {
-                    const content = window.querySelector('.window-content');
-                    const isMinimized = content.style.display === 'none';
-                    localStorage.setItem(stateKey, isMinimized);
-                }, 200);
-            });
-        }
-    });
 }
 
 // Utility functions
