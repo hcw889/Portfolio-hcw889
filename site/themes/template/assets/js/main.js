@@ -349,18 +349,6 @@ function initSearch() {
 
 // Theme persistence
 function initThemePersistence() {
-    // Save scroll position
-    window.addEventListener('beforeunload', function() {
-        localStorage.setItem('scrollPosition', window.scrollY);
-    });
-    
-    // Restore scroll position
-    const savedPosition = localStorage.getItem('scrollPosition');
-    if (savedPosition) {
-        window.scrollTo(0, parseInt(savedPosition));
-        localStorage.removeItem('scrollPosition');
-    }
-    
     // Remember window states
     document.querySelectorAll('.window').forEach((window, index) => {
         const savedState = localStorage.getItem(`window-${index}-minimized`);
