@@ -10,9 +10,7 @@
     </div>
     <div class="window-content">
         <div class="tag-info" style="background: var(--bg-secondary); border: 1px inset var(--border-dark); padding: 8px; margin-bottom: 12px;">
-            <div style="font-weight: bold; margin-bottom: 4px;">
-                🏷️ Tag: {{ .Data.Term | title }}
-            </div>
+            <h1 class="page-title">🏷️ Tag: {{ .Data.Term | title }}</h1>
             <div style="font-size: 10px;">
                 {{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }} tagged with "{{ .Data.Term }}"
             </div>

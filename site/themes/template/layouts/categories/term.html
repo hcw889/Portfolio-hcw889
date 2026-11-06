@@ -10,9 +10,7 @@
     </div>
     <div class="window-content">
         <div class="category-info" style="background: var(--bg-secondary); border: 1px inset var(--border-dark); padding: 8px; margin-bottom: 12px;">
-            <div style="font-weight: bold; margin-bottom: 4px;">
-                📂 Category: {{ .Data.Term | title }}
-            </div>
+            <h1 class="page-title">📂 Category: {{ .Data.Term | title }}</h1>
             <div style="font-size: 10px;">
                 {{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }} in this category
             </div>
