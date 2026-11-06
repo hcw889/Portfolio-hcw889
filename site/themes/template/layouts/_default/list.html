@@ -62,7 +62,7 @@
         <div id="listView" class="posts-view">
             {{ if .Pages }}
             <ul class="post-list">
-                {{ range .Pages.ByDate.Reverse }}
+                {{ range .Pages }}
                 <li class="post-list-item">
                     {{ if .Params.featured_image }}
                     <div class="post-thumbnail" style="float: left; margin-right: 8px; margin-bottom: 4px;">
@@ -87,8 +87,10 @@
                         </span>
                         {{ end }}
                         
+                        {{ if .IsPage }}
                         <span class="post-meta-item">📖 {{ .ReadingTime }} min read</span>
                         <span class="post-meta-item">📊 {{ .WordCount }} words</span>
+                        {{ end }}
                     </div>
                     
                     {{ with .Description | default (.Summary | plainify | truncate 200) }}
@@ -121,7 +123,7 @@
         <div id="gridView" class="posts-view" style="display: none;">
             {{ if .Pages }}
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 8px;">
-                {{ range .Pages.ByDate.Reverse }}
+                {{ range .Pages }}
                 <div class="post-card" style="background: var(--bg-window); border: 1px outset var(--border-dark); padding: 8px;">
                     {{ if .Params.featured_image }}
                     <div class="card-image" style="margin-bottom: 6px;">
@@ -134,7 +136,7 @@
                     </div>
                     
                     <div class="card-meta" style="font-size: 9px; color: var(--text-secondary); margin-bottom: 4px;">
-                        {{ .Date.Format "Jan 2, 2006" }} • {{ .ReadingTime }} min read
+                        {{ .Date.Format "Jan 2, 2006" }}{{ if .IsPage }} • {{ .ReadingTime }} min read{{ end }}
                     </div>
                     
                     {{ with .Description | default (.Summary | plainify | truncate 100) }}
