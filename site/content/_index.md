@@ -1,50 +1,15 @@
 ---
-title: "Welcome to Retro Web Central!"
-date: 1999-12-31T23:59:59Z
+title: "홈"
+date: 2026-11-06
 draft: false
 ---
 
-# 🌐 Welcome to Retro Web Central! 🌐
+# 홍채운의 포트폴리오
 
-**You are visitor #999,999!** 
+인프라 엔지니어를 꿈꾸는 대학생입니다. 전북대학교 알고리즘 학술동아리 ALPS의 회장을 맡고 있습니다.
 
-## 🎉 What's Hot on the Web! 🎉
+## 바로 가기
 
-Greetings, fellow netizen! You've stumbled upon the most tubular corner of the information superhighway. This site is your one-stop destination for all things retro web, Y2K nostalgia, and vintage tech wisdom!
-
-### 📱 What's New in Tech?
-
-The new millennium is approaching and technology is advancing at warp speed! We've got the latest scoop on:
-
-- **Internet Explorer 5.0** - The future of browsing is here!
-- **Windows 98 Second Edition** - More stable than ever
-- **56k Modems** - Blazing fast internet connections
-- **MP3 Players** - Music on the go!
-
-### 💾 System Requirements
-
-This site is optimized for:
-- **Browser:** Netscape Navigator 4.0+ or Internet Explorer 4.0+
-- **Resolution:** 1024x768 (Higher resolutions supported!)
-- **Colors:** 256 colors minimum, True Color recommended
-- **RAM:** 32MB minimum, 64MB recommended
-- **Connection:** 28.8k modem or faster
-
-### 🔗 Cool Links
-
-- [Yahoo! Directory](http://www.yahoo.com) - The best web directory
-- [AltaVista Search](http://www.altavista.com) - Find anything on the web
-- [Hotmail](http://www.hotmail.com) - Free email for everyone!
-- [ICQ](http://www.icq.com) - Chat with friends online
-
----
-
-**This site is under construction! 🚧 Check back often for updates!**
-
-<center>
-<img src="https://via.placeholder.com/88x31/FF00FF/FFFFFF?text=Made+with+HTML" alt="Made with HTML" /> 
-<img src="https://via.placeholder.com/88x31/00FFFF/000000?text=Best+viewed+in+Netscape" alt="Best viewed in Netscape" />
-<img src="https://via.placeholder.com/88x31/FFFF00/000000?text=Y2K+Ready" alt="Y2K Ready" />
-</center>
-
-*Last updated: December 31, 1999 at 11:59 PM*
+- **[소개](/about/)**: 관심 분야, 학습 목표, 다루는 기술
+- **[대표 활동: 알고리즘 학술동아리 ALPS 회장](/posts/alps-president/)**: 기간, 목적, 역할, 결과
+- **[GitHub](https://github.com/hcw889)**: 이 사이트의 소스 저장소와 프로젝트
