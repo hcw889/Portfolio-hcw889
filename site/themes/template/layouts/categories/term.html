@@ -44,8 +44,8 @@
                     <span class="post-meta-item">📖 {{ .ReadingTime }} min read</span>
                 </div>
                 
-                {{ with .Summary }}
-                <div class="post-list-summary">{{ . | truncate 200 }}</div>
+                {{ with .Description | default (.Summary | plainify | truncate 200) }}
+                <div class="post-list-summary">{{ . }}</div>
                 {{ end }}
                 
                 {{ with .Params.tags }}
