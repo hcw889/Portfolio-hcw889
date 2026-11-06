@@ -62,9 +62,9 @@
             <ul class="post-list">
                 {{ range .Pages.ByDate.Reverse }}
                 <li class="post-list-item">
-                    {{ with .Params.featured_image }}
+                    {{ if .Params.featured_image }}
                     <div class="post-thumbnail" style="float: left; margin-right: 8px; margin-bottom: 4px;">
-                        <img src="{{ . }}" alt="{{ $.Title }}" style="width: 60px; height: 45px; object-fit: cover; border: 1px solid var(--border-dark);">
+                        <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" style="width: 60px; height: 45px; object-fit: cover; border: 1px solid var(--border-dark);">
                     </div>
                     {{ end }}
                     
@@ -121,9 +121,9 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 8px;">
                 {{ range .Pages.ByDate.Reverse }}
                 <div class="post-card" style="background: var(--bg-window); border: 1px outset var(--border-dark); padding: 8px;">
-                    {{ with .Params.featured_image }}
+                    {{ if .Params.featured_image }}
                     <div class="card-image" style="margin-bottom: 6px;">
-                        <img src="{{ . }}" alt="{{ $.Title }}" style="width: 100%; height: 120px; object-fit: cover; border: 1px solid var(--border-dark);">
+                        <img src="{{ .Params.featured_image }}" alt="{{ .Title }}" style="width: 100%; height: 120px; object-fit: cover; border: 1px solid var(--border-dark);">
                     </div>
                     {{ end }}
                     
