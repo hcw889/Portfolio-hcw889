@@ -63,3 +63,18 @@ hugo server --config hugo.toml,pages.json --baseURL http://localhost:1313/
 ```
 
 브라우저에서 http://localhost:1313/ 을 엽니다. 로컬 미리보기는 배포 때의 경로 보정을 하지 않으므로, 최종 확인은 공개 사이트에서 합니다.
+
+## 수정과 재배포
+
+1. 위 "폴더 구조와 수정 위치" 표에서 바꿀 파일을 찾아 고칩니다. 소개 글은 `site/content/about.md`, 활동 글은 `site/content/posts/`, 메뉴와 제목은 `site/hugo.toml`입니다.
+2. 바꾼 파일을 커밋하고 main에 push합니다.
+
+   ```bash
+   git add site/content/about.md
+   git commit -m "content: 소개 페이지 수정"
+   git push
+   ```
+
+3. 저장소의 [Actions 탭](https://github.com/hcw889/Portfolio-hcw889/actions)에서 "Deploy Hugo to GitHub Pages" 실행이 초록 체크(성공)가 될 때까지 기다립니다. 보통 1–2분 걸립니다.
+4. 공개 사이트 https://hcw889.github.io/Portfolio-hcw889/ 를 Ctrl+F5(캐시 무시)나 시크릿 창으로 열어 바뀐 내용을 확인합니다.
+5. 실행이 실패하면 Actions에서 실패한 단계의 로그를 열어 원인을 확인하고, 고친 뒤 다시 push합니다.
