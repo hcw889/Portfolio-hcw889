@@ -218,15 +218,6 @@ function initKeyboardNavigation() {
             window.location.href = '/posts/';
         }
         
-        // Escape to minimize all windows
-        if (e.key === 'Escape') {
-            document.querySelectorAll('.window .window-content').forEach(content => {
-                if (content.style.display !== 'none') {
-                    content.style.display = 'none';
-                }
-            });
-        }
-        
         // F11 for fullscreen (show message)
         if (e.key === 'F11') {
             e.preventDefault();
