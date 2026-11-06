@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="window">
     <div class="window-header">
-        <span class="window-title">📂 Category: {{ .Data.Term | title }}</span>
+        <span class="window-title">📂 분류: {{ .Title }}</span>
         <div class="window-controls" aria-hidden="true">
             <span class="window-button">_</span>
             <span class="window-button">□</span>
@@ -10,9 +10,9 @@
     </div>
     <div class="window-content">
         <div class="category-info" style="background: var(--bg-secondary); border: 1px inset var(--border-dark); padding: 8px; margin-bottom: 12px;">
-            <h1 class="page-title">📂 Category: {{ .Data.Term | title }}</h1>
+            <h1 class="page-title">📂 분류: {{ .Title }}</h1>
             <div style="font-size: 10px;">
-                {{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }} in this category
+                이 분류의 글 {{ len .Pages }}개
             </div>
             {{ with .Description }}
             <div style="font-size: 10px; margin-top: 4px; font-style: italic;">{{ . }}</div>
