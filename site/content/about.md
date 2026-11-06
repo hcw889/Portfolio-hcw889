@@ -5,7 +5,7 @@ draft: false
 description: "인프라 엔지니어를 꿈꾸는 대학생 홍채운입니다."
 ---
 
-{{< screenshot src="/images/profile.png" alt="홍채운 프로필 이미지" width="180px" >}}
+{{< screenshot src="/images/profile.jpg" alt="홍채운 프로필 이미지" width="180px" >}}
 
 ## 안녕하세요, 홍채운입니다
 
