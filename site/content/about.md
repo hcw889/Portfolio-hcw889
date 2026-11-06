@@ -1,169 +1,33 @@
 ---
-title: "About Retro Web Central"
-date: 1999-12-01T10:00:00Z
+title: "소개"
+date: 2026-11-06
 draft: false
-description: "Learn about the most radical website on the World Wide Web"
+description: "인프라 엔지니어를 꿈꾸는 대학생 홍채운입니다."
 ---
 
-# About Retro Web Central 🌐
+{{< screenshot src="/images/profile.png" alt="홍채운 프로필 이미지" width="180px" >}}
 
-## Welcome to the Coolest Corner of Cyberspace! 
+## 안녕하세요, 홍채운입니다
 
-**Greetings, fellow netizen!** You've discovered the ultimate destination for everything that makes the World Wide Web totally awesome. Retro Web Central has been your trusted guide to the digital frontier since 1999!
+인프라 엔지니어를 꿈꾸는 대학생입니다. 전북대학교 알고리즘 학술동아리 ALPS의 회장을 맡고 있고, 학교 온라인 저지 [Litmus](https://litmus.jedutools.io) 운영과 [Zerotime](https://zerotime.kr) 프로젝트 개발에 참여하고 있습니다.
 
-## Our Mission 🎯
+## 관심 분야
 
-We're dedicated to bringing you:
+- **인프라 엔지니어링**
+- 웹 개발
+- 인공지능 활용
 
-- 🔥 **The hottest web design trends** from around the globe
-- 💻 **Cutting-edge technology reviews** and tutorials  
-- 🎨 **Graphic resources** to make your site shine
-- 🚀 **Y2K preparedness** information and updates
-- 🎮 **Gaming news** and reviews
+**관심을 갖게 된 계기:** 웹 서비스 유지보수팀에 들어와 백엔드와 DB 등을 공부하다 보니 인프라에 관심이 생겼습니다.
 
-## Meet the Team 👥
+## 학습 목표와 다음 행동
 
-### WebMaster3000 - Site Administrator
-*"Making the web a more colorful place, one animated GIF at a time!"*
+- **목표:** 직접 무언가를 만들고 운영해 보기
+- **다음 행동:** 앞으로 7개월 안에 플랫폼 하나를 만들어 서비스 운영까지 해 보는 프로젝트를 진행하고, 이를 바탕으로 논문을 써 보려고 합니다.
 
-- **Expertise:** HTML, JavaScript, CGI Scripts
-- **Favorite Browser:** Netscape Navigator 4.7
-- **Fun Fact:** Has over 10,000 bookmarks organized into 47 folders
-- **Contact:** webmaster@example.net
+## 다루는 기술과 사용 사례
 
-### TechGuru99 - Technology Correspondent  
-*"If it's got a processor, I've probably taken it apart!"*
+| 기술·도구 | 실제로 써 본 곳 |
+|---|---|
+| GitHub, GitHub Actions | 이 포트폴리오 사이트의 소스를 [GitHub 저장소](https://github.com/hcw889/Portfolio-hcw889)로 관리하고, main에 push하면 GitHub Actions가 자동으로 빌드·배포합니다. |
 
-- **Specialties:** Hardware reviews, Y2K analysis, troubleshooting
-- **Current Setup:** Pentium III 500MHz, 128MB RAM, 20GB HDD
-- **Predictions:** Believes DVD will replace VHS by 2005
-- **Contact:** tech@example.net
-
-### GifMaster2000 - Graphics Designer
-*"Static images are for static minds!"*
-
-- **Skills:** Animation, GIF optimization, Photoshop 5.5
-- **Tools:** Animation Shop Pro, GIF Construction Set
-- **Portfolio:** Created over 500 web graphics
-- **Contact:** graphics@example.net
-
-## Site Statistics 📊
-
-**Impressive Numbers:**
-- **Founded:** January 1, 1999
-- **Total Visitors:** 999,999+ (and counting!)
-- **Page Views:** Over 5 million
-- **Guestbook Entries:** 12,847
-- **Awards Won:** 23 "Cool Site of the Day" awards
-
-## Our Technology Stack 💾
-
-**Hardware:**
-- **Server:** Dell PowerEdge 2300
-- **Processor:** Dual Pentium II 400MHz
-- **RAM:** 512MB ECC
-- **Storage:** RAID 5 array with 18GB total
-- **Connection:** T1 line (1.5Mbps!)
-
-**Software:**
-- **Operating System:** Windows NT Server 4.0
-- **Web Server:** Microsoft IIS 4.0
-- **Database:** Microsoft Access 97
-- **Graphics:** Adobe Photoshop 5.5, Animation Shop Pro
-- **HTML Editor:** Microsoft FrontPage 98
-
-## Awards & Recognition 🏆
-
-We're proud recipients of:
-
-- 🥇 **"Best Retro Site 1999"** - Web Design Weekly
-- 🏅 **"Y2K Resource of the Year"** - Tech Magazine
-- ⭐ **"5-Star Webmaster Resource"** - HTML Central
-- 🎨 **"Graphics Excellence Award"** - Digital Arts Forum
-
-## Visitor Testimonials 💬
-
-> *"This site totally rocks! I learned HTML here and now I'm building my own GeoCities page!"*  
-> **- DigitalDreamer99**
-
-> *"Best animated GIF collection on the entire World Wide Web. Bookmarked!"*  
-> **- WebSurfer2000**
-
-> *"Their Y2K coverage saved my computer! These guys know their stuff."*  
-> **- TechNewbie**
-
-## Site Guidelines 📝
-
-**Our Promise to You:**
-- ✅ All content is family-friendly
-- ✅ No pop-up windows (we hate them too!)
-- ✅ Fast loading on 28.8k modems
-- ✅ Regular updates (check back weekly!)
-- ✅ Free downloads and resources
-
-**House Rules:**
-- Be respectful in our guestbook
-- No spam or commercial messages
-- Share cool links you discover
-- Help fellow webmasters learn
-
-## Technical Specifications 🔧
-
-**This Site Works Best With:**
-- **Browser:** Netscape 4.0+ or Internet Explorer 4.0+
-- **Screen Resolution:** 800x600 minimum (1024x768 recommended)
-- **Colors:** 256 colors minimum (True Color for best experience)
-- **Plug-ins:** Flash Player 4.0, RealPlayer 7.0
-- **Connection:** 28.8k modem or faster
-
-## Join Our Community! 🤝
-
-**Ways to Connect:**
-- 📧 Subscribe to our weekly newsletter
-- 💬 Join our IRC channel: #retrowebcentral on EFNet
-- 🔗 Exchange links with us
-
-## Future Plans 🔮
-
-**Coming Soon:**
-- **Flash animations** (when more people get the plug-in)
-- **Online chat room** powered by Java applets
-- **Weekly webmaster tutorials** via RealVideo
-- **CD-ROM** with our complete graphics collection
-
-## Contact Information 📞
-
-**Retro Web Central HQ**
-```
-Email: info@example.net
-ICQ: 12345678
-AIM: RetroWebCentral
-Yahoo! Messenger: retrowebcentral
-Phone: 1-800-RETRO-WEB (emergencies only!)
-
-Mailing Address:
-Retro Web Central
-123 Information Superhighway
-Cyberspace, WWW 90210
-```
-
----
-
-## Acknowledgments 🙏
-
-Special thanks to:
-- **Tim Berners-Lee** for inventing the World Wide Web
-- **Marc Andreessen** for creating Mosaic browser
-- **The entire internet community** for making the web awesome
-- **Our hosting provider** for keeping us online 24/7
-- **All our visitors** who make this site worthwhile
-
-<center>
-<img src="https://via.placeholder.com/88x31/0066FF/FFFFFF?text=RETRO+WEB" alt="Retro Web" />
-<img src="https://via.placeholder.com/88x31/FF0066/FFFFFF?text=SINCE+1999" alt="Since 1999" />
-<img src="https://via.placeholder.com/88x31/00FF66/000000?text=Y2K+READY" alt="Y2K Ready" />
-</center>
-
-**Thank you for visiting Retro Web Central - where the future of the web happens today!** ✨
-
-*Last updated: December 1, 1999*
+그 밖에 C++, React, MariaDB를 배우고 쓰고 있으며, [Zerotime.kr](https://zerotime.kr) 프로젝트에서 타임라인 세부 기능 개발팀으로 참여하고 있습니다.
