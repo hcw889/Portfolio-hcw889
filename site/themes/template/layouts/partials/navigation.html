@@ -15,14 +15,14 @@
             {{ $categories := .Site.GetPage "/categories" }}
             {{ if $categories }}
             <li class="nav-item">
-                <a href="{{ $categories.Permalink | absLangURL }}" class="nav-link">📂 Categories</a>
+                <a href="{{ $categories.Permalink | absLangURL }}" class="nav-link">📂 분류</a>
             </li>
             {{ end }}
 
             {{ $tags := .Site.GetPage "/tags" }}
             {{ if $tags }}
             <li class="nav-item">
-                <a href="{{ $tags.Permalink | absLangURL }}" class="nav-link">🏷️ Tags</a>
+                <a href="{{ $tags.Permalink | absLangURL }}" class="nav-link">🏷️ 태그</a>
             </li>
             {{ end }}
 
@@ -56,14 +56,14 @@
             {{ $categories := .Site.GetPage "/categories" }}
             {{ if $categories }}
             <li class="nav-item">
-                <a href="{{ $categories.Permalink | absLangURL }}" class="nav-link">📂 Categories</a>
+                <a href="{{ $categories.Permalink | absLangURL }}" class="nav-link">📂 분류</a>
             </li>
             {{ end }}
 
             {{ $tags := .Site.GetPage "/tags" }}
             {{ if $tags }}
             <li class="nav-item">
-                <a href="{{ $tags.Permalink | absLangURL }}" class="nav-link">🏷️ Tags</a>
+                <a href="{{ $tags.Permalink | absLangURL }}" class="nav-link">🏷️ 태그</a>
             </li>
             {{ end }}
         {{ end }}
