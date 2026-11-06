@@ -73,7 +73,3 @@ ignoreLogs = ['warning-goldmark-raw-html']
     instagram = "g.cd.23"
     github = "hcw889"
     email = "hcw889889@gmail.com"
-
-  # Repository (for edit links)
-  repo_url = "https://github.com/madebydia/vintage-web-hugo-theme"
-  edit_page = true
