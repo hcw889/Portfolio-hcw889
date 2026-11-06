@@ -18,7 +18,7 @@ tags: ["알고리즘", "문제 출제", "Litmus"]
 
 TA 팀장으로서 교내 역량인증 시험에 쓰이는 알고리즘 문제를 출제합니다.
 
-{{< screenshot src="/images/ta-poster.png" alt="하반기 역량인증제 홍보 포스터" caption="하반기 역량인증제 (2026.11.23)" >}}
+{{< screenshot src="/images/ta-poster.png" alt="하반기 역량인증제 홍보 포스터" caption="2026 하반기 SW역량인증제 시행 안내 (2026.11.23, 포스터 출처: 전북대학교 SW중심대학사업단)" >}}
 
 ## 관련 링크
 
