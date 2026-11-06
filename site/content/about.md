@@ -31,3 +31,11 @@ description: "인프라 엔지니어를 꿈꾸는 대학생 홍채운입니다."
 | GitHub, GitHub Actions | 이 포트폴리오 사이트의 소스를 [GitHub 저장소](https://github.com/hcw889/Portfolio-hcw889)로 관리하고, main에 push하면 GitHub Actions가 자동으로 빌드·배포합니다. |
 
 그 밖에 C++, React, MariaDB를 배우고 쓰고 있으며, [Zerotime.kr](https://zerotime.kr) 프로젝트에서 타임라인 세부 기능 개발팀으로 참여하고 있습니다.
+
+## 활동
+
+- **[알고리즘 학술동아리 ALPS 회장](/posts/alps-president/)** (대표 활동) · 2026.01 ~ 진행 중 · 동아리 운영 전반을 맡고 있습니다.
+- **전북대학교 역량인증제 TA 팀장** · 2026.03 ~ 진행 중 · 교내 역량인증 시험을 위한 알고리즘 문제를 출제합니다. 시험은 [Litmus](https://litmus.jedutools.io)에서 진행됩니다.
+- **[JBNUPC](https://sites.google.com/view/jbnu-alps/jbnupc) 교내 프로그래밍 대회 개최** · 2026.05.09 · ALPS 동아리 주관으로 교내 알고리즘 대회를 열었습니다.
+- **[Zerotime](https://zerotime.kr) 프로젝트** · 2025.12 ~ 진행 중 · 학교 공지사항을 한눈에 보여 주는 서비스에서 타임라인 세부 기능 개발팀으로 참여하고 있습니다.
+- **[Litmus](https://litmus.jedutools.io) 운영팀 PM** · 2025.10 ~ 진행 중 · 전북대학교 온라인 저지 시스템의 유지보수팀장을 맡고 있습니다.
