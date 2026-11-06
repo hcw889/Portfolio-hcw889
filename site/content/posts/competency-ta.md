@@ -6,24 +6,21 @@ description: "교내 역량인증 시험에 쓰이는 알고리즘 문제를 출
 author: "홍채운"
 categories: ["운영"]
 tags: ["알고리즘", "문제 출제", "Litmus"]
-# ── 직접 채울 곳 ─────────────────────────────────────────────
-# description: 홈, 활동 목록에 보이는 한 줄 요약입니다.
-# 본문 맨 아래에 필요한 섹션을 추가하세요. (예)
-#   ## 목적      이 일을 맡은 이유
-#   ## 한 일     출제한 문제 수, 난이도 설계, 검수 방식 등
-#   ## 결과      시험 운영 결과
-#   ## 배운 점   배운 것과 다음에 개선할 점
-# 사진: site/static/images/ 에 넣고, 대표 활동 글(alps-president.md)의 screenshot 줄을 복사해 씁니다.
+
 ---
 
 ## 기간과 진행 상태
 
-2026년 3월부터 진행 중입니다.
+- 2026년 3월부터 진행 중입니다.
+- 상반기, 하반기 문제 출제에 참여중입니다.
 
 ## 내 역할
 
 TA 팀장으로서 교내 역량인증 시험에 쓰이는 알고리즘 문제를 출제합니다.
 
+{{< screenshot src="/images/ta-poster.png" alt="하반기 역량인증제 홍보 포스터" caption="하반기 역량인증제 (2026.11.23)" >}}
+
 ## 관련 링크
 
+- 2026 하반기 역량인증제 (시행중) : [SW중심대학사업단](https://swuniv.jbnu.ac.kr/main/jbnusw?gc=Program&do=sinform&program_id=VZsETpU78XtP&psin_id=VZsETpaKWTeF)
 - 시험 플랫폼: [Litmus](https://litmus.jedutools.io)
