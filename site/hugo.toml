@@ -54,25 +54,25 @@ ignoreLogs = ['warning-goldmark-raw-html']
   welcome_message = "Welcome to my Portfolio! visitor : #3286!"
 
   # Content Display
-  show_featured_sections = true
+  show_featured_sections = false
   show_stats = true
-  show_retro_elements = true
-  show_sharing = true
+  show_retro_elements = false
+  show_sharing = false
 
   # Footer Options
-  show_retro_footer = true
+  show_retro_footer = false
   show_build_info = false
 
   # Sidebar Options
   show_sidebar_stats = true
-  show_retro_sidebar = true
-  sidebar_content = "This site is best viewed in Netscape Navigator 4.0 at 1024x768 resolution!"
+  show_retro_sidebar = false
+  sidebar_content = ""
 
   # Social Links
   [params.social]
-    twitter = "madebydia"
-    github = "madebydia"
-    email = "webmaster@example.com"
+    instagram = "g.cd.23"
+    github = "hcw889"
+    email = "hcw889889@gmail.com"
 
   # Repository (for edit links)
   repo_url = "https://github.com/madebydia/vintage-web-hugo-theme"
