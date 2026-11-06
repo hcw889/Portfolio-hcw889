@@ -4,8 +4,8 @@ date: 2026-11-06
 draft: false
 description: "전북대학교 알고리즘 학술동아리 ALPS의 회장으로 동아리 운영 전반을 맡고 있습니다."
 author: "홍채운"
-categories: ["activity"]
-tags: ["algorithm", "leadership", "icpc", "jbnupc"]
+categories: ["대표 활동"]
+tags: ["알고리즘", "리더십", "ICPC", "JBNUPC"]
 toc: true
 ---
 
