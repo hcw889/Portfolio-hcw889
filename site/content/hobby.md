@@ -28,11 +28,11 @@ description: "이력과는 상관없는, 좋아하는 것들을 적어 둔 페�
 - SONY A7M2 카메라를 가지고 있어요.
 - 2025년 11월 전북대 풍경콘테스트 우승도 했답니다. 
 {{< screenshot src="/images/1.jpg" alt="2025 JPG " caption="2025 JPG 전북대 풍경 콘테스트 1위 수상작" >}}
-{{< screenshot src="/images/2.jpg" width="50%" >}}
-{{< screenshot src="/images/3.jpg" width="50%" >}}
-{{< screenshot src="/images/4.jpg" width="50%" >}}
-{{< screenshot src="/images/5.jpg" width="50%" >}}
-{{< screenshot src="/images/6.jpg" width="50%" >}}
+{{< screenshot src="/images/2.jpg" alt="단풍 든 나무 아래 한옥 앞을 한복 입은 두 사람이 걷는 모습" width="50%" >}}
+{{< screenshot src="/images/3.jpg" alt="햇빛이 비치는 주황빛 단풍나무 사이 풍경" width="50%" >}}
+{{< screenshot src="/images/4.jpg" alt="양옆으로 노랗게 물든 가로수가 늘어선 길" width="50%" >}}
+{{< screenshot src="/images/5.jpg" alt="단풍나무 아래 파라솔과 야외 테이블이 놓인 건물 앞 풍경" width="50%" >}}
+{{< screenshot src="/images/6.jpg" alt="위에서 내려다본 도로와 지붕 덮인 통로, 지나가는 차들" width="50%" >}}
 
 ### JPOP / 콘서트
 - 🎵back number - 水平線🎵
