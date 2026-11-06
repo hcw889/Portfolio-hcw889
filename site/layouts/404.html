@@ -1,0 +1,20 @@
+{{ define "title" }}페이지를 찾을 수 없습니다 | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="window">
+    <div class="window-header">
+        <span class="window-title">404</span>
+    </div>
+    <div class="window-content">
+        <h1 class="page-title">페이지를 찾을 수 없습니다</h1>
+        <div class="content">
+            <p>주소가 잘못되었거나 페이지가 옮겨졌을 수 있습니다. 아래 링크로 이동해 주세요.</p>
+            <ul>
+                <li><a href="{{ "" | relURL }}">홈으로 돌아가기</a></li>
+                <li><a href="{{ "about/" | relURL }}">소개</a></li>
+                <li><a href="{{ "posts/" | relURL }}">활동</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{{ end }}
