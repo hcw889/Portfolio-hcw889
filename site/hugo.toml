@@ -26,24 +26,24 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 # Menu
 [[menu.main]]
-  name = "Home"
+  name = "홈"
   url = "/"
   weight = 10
 
 [[menu.main]]
-  name = "Posts"
-  url = "/posts/"
+  name = "소개"
+  url = "/about/"
   weight = 20
 
 [[menu.main]]
-  name = "About"
-  url = "/about/"
+  name = "활동"
+  url = "/posts/"
   weight = 30
 
 # Theme Parameters
 [params]
   # Site Description
-  description = "Portfolio"
+  description = "인프라 엔지니어를 꿈꾸는 대학생 홍채운의 포트폴리오"
   author = "hcw889"
 
   # Retro Features
