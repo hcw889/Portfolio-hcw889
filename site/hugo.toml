@@ -1,7 +1,7 @@
 baseURL =  "https://hcw889.github.io/Portfolio-hcw889"
 defaultContentLanguage = "ko"
 locale = "ko-KR"
-title = "Retro Web Central - Portfolio - 홍채운"
+title = "Portfolio : 홍채운"
 
 
 # Pagination
@@ -40,23 +40,18 @@ ignoreLogs = ['warning-goldmark-raw-html']
   url = "/about/"
   weight = 30
 
-[[menu.main]]
-  name = "Guestbook"
-  url = "/guestbook/"
-  weight = 40
-
 # Theme Parameters
 [params]
   # Site Description
-  description = "Your ultimate destination for nostalgic web experiences and retro tech wisdom"
-  author = "WebMaster3000"
+  description = "Portfolio"
+  author = "hcw889"
 
   # Retro Features
-  show_browser_chrome = true
+  show_browser_chrome = false
   show_status_bar = true
   show_sidebar = true
   show_welcome_message = true
-  welcome_message = "Welcome to the World Wide Web! You are visitor #999,999!"
+  welcome_message = "Welcome to my Portfolio! visitor : #3286!"
 
   # Content Display
   show_featured_sections = true
